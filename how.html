@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: rgb(1, 1, 15);">
+    <div class="navBarr">
+        <div class="navBar">
+            <div class="barBtn">
+                <div class="nav1">
+                    <p><i>Voxify</i></p>
+                </div>
+                <div class="toggle-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="nav2">
+                <a href="#home"><button>Home</button></a>
+                <a href="#features"><button>Features</button></a>
+                <a href="#work"><button>How it works</button></a>
+                <a href="#faq"><button>FAQ</button></a>
+                <a href="#testmonial"><button>Testmonial</button></a>
+            </div>
+            <div class="nav3">
+                <button><a href="getStarted.html">Get Started</a></button>
+            </div>
+        </div>
+
+    </div>
+    <div class="dropdown-menu">
+        <a href="index.html"><button>Home</button></a>
+        <a href="features.html"><button>Features</button></a>
+        <a href="how.html"><button>How it works</button></a>
+        <a href="faq.html"><button>FAQ</button></a>
+        <a href="testimonial.html"><button>Testimonial</button></a>
+        <a href="voice.html"><button>Get Started</button></a>
+    </div>
+    <div class="boxx3p">
+        <p>Why Choose Voxify?</p>
+    </div>
+    <p class="boxx3p2">Experience the Difference with Voxify</p>
+    <p class="boxx3p3">Voxify is more than just an AI voice assistant--it's your personal companion, designed to
+        <br />make life easier, more organized, and stress-free.
+    </p>
+    <div class="bbox5">
+        <div class="box5">
+            <div class="boxx4">
+                <img src="./images/blue13 copy.jpeg" />
+                <p class="privacy">Privacy You Can Trust</p>
+                <p class="data">Your data is safe with Voxify. We use state-of-the-art <br />encryption to ensure your
+                    personal
+                    information remains<br />secure and accessible only to you.</p>
+            </div>
+            <div class="boxx6">
+                <img src="./images/blue16.jpeg" />
+                <p class="loved">Loved by People Around the Globe</p>
+                <p class="city">From bustling cities to quiet suburbs. Voxify is<br />transforming lives across the
+                    world.
+                    Professionals use it<br /> to stay on top of their schedules.</p>
+            </div>
+            <div class="boxx5">
+                <img src="./images/blue14.jpeg" />
+                <p class="seam">Seamless Integrations</p>
+                <p class="work">Voxify works effortlessly with your favorite apps and<br />smart devices. Connect it
+                    with your
+                    email,calender,<br />smart home gadgets, and more for a unified experience</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector(".toggle-btn");
+        const toggleBtnIcon = document.querySelector(".toggle-btn i");
+        const dropDownMenu = document.querySelector(".dropdown-menu")
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle("open")
+            const isOpen = dropDownMenu.classList.contains("open")
+
+            toggleBtnIcon.classList = isOpen
+                ? "fa-solid fa-xmark"
+                : "fa-solid fa-bars"
+        }
+
+    </script>
+</body>
+
+</html>

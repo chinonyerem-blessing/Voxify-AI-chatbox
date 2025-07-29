@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: rgb(1,1,15);">
+    <div>
+        <div class="navBarr">
+            <div class="navBar" style="justify-content: center;">
+                <div class="barBtn" style="justify-content: center;">
+                    <div class="nav1">
+                        <p><i>Voxify</i></p>
+                    </div>
+                    <div class="toggle-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <div class="nav2">
+                    <a href="#home"><button>Home</button></a>
+                    <a href="#features"><button>Features</button></a>
+                    <a href="#work"><button>How it works</button></a>
+                    <a href="#faq"><button>FAQ</button></a>
+                    <a href="#testmonial"><button>Testmonial</button></a>
+                </div>
+                <div class="nav3">
+                    <button><a href="getStarted.html">Get Started</a></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="dropdown-menu">
+            <a href="index.html"><button>Home</button></a>
+            <a href="features.html"><button>Features</button></a>
+            <a href="how.html"><button>How it works</button></a>
+            <a href="faq.html"><button>FAQ</button></a>
+            <a href="testimonial.html"><button>Testimonial</button></a>
+            <a href="voice.html"><button>Get Started</button></a>
+        </div>
+    </div>
+    <div class="faq1">
+        <p>FAQ</p>
+
+    </div>
+    <p class="faq2">Frequently Asked Questions</p>
+    <p class="faq3">Find answers to all your questions about Voxify and discover how our AI voice<br />assistant can
+        transform
+        your daliy routines.</p>
+    <div class="faq4">
+        <button>More FAQ</button>
+    </div>
+    <div class="faq-box">
+        <div>
+            <div class="faq5">
+                <div class="faq5-1">
+                    <p>How does Voxify work?</p>
+                    <p><i class="fa-solid fa-chevron-down"></i></p>
+                </div>
+                <p class="ans">Voxify is an AI voice assistant that uses advanced voice recognition<br /> technology
+                    to understand your
+                    commands and respond to them instantly. <br />Simply speak to Voxify, and it willexecute your
+                    requests with
+                    precision.</p>
+            </div>
+            <div class="faq6">
+                <div class="faq6-1">
+                    <p>Is Voxify free to use?</p>
+                    <p><i class="fa-solid fa-chevron-down"></i></p>
+                </div>
+
+                <p class="ans">Yes, Voxify is free to use for all users. You can download the app on your<br />
+                    smartphone or smart
+                    device and
+                    start using it right away. There are no <br /> hidden fees or charges involved.</p>
+            </div>
+            <div class="faq7">
+                <div class="faq7-1">
+                    <p>Can I customize Voxify to my preferences?</p>
+                    <p><i class="fa-solid fa-chevron-down"></i></p>
+                </div>
+
+                <p class="ans">Yes, you can customize Voxify to your preferences by setting up your <br />profile
+                    and adjusting the
+                    settings
+                    according to your needs. Voxify adapts<br /> to your style and preferences to provide a
+                    personalized
+                    experience.</p>
+            </div>
+            <div class="faq8">
+                <div class="faq8-1">
+                    <p>Is Voxify available on all devices?</p>
+                    <p><i class="fa-solid fa-chevron-down"></i></p>
+                </div>
+
+                <p class="ans">Yes, Voxify is available on all devices, including smartphones, tablets,<br /> smart
+                    speakers, and
+                    more. You can
+                    download the app on your preferred<br /> device and start using it right away.</p>
+            </div>
+            <div>
+                <div class="faq9">
+                    <div class="faq9-1">
+                        <p>How secure is Voxify?</p>
+                        <p><i class="fa-solid fa-chevron-down"></i></p>
+                    </div>
+
+                    <p class="ans">Voxify takes your privacy and security seriously. We use state-of-the-art<br />
+                        encryption technology
+                        to
+                        ensure your personal information remains<br /> secure and accessible only to you. Your data
+                        is
+                        safe
+                        with Voxify.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector(".toggle-btn");
+        const toggleBtnIcon = document.querySelector(".toggle-btn i");
+        const dropDownMenu = document.querySelector(".dropdown-menu")
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle("open")
+            const isOpen = dropDownMenu.classList.contains("open")
+
+            toggleBtnIcon.classList = isOpen
+                ? "fa-solid fa-xmark"
+                : "fa-solid fa-bars"
+        }
+
+        const faqQuestions1 = document.querySelectorAll(".faq5-1");
+
+        faqQuestions1.forEach((question1) => {
+            question1.addEventListener('click', () => {
+                const answer1 = question1.nextElementSibling;
+                const chevron1 = question1.querySelector('i');
+                question1.classList.toggle('active');
+                if (answer1.style.display === 'block') {
+                    answer1.style.display = 'none';
+                    chevron1.classList.remove('fa-chevron-up');
+                    chevron1.classList.add('fa-chevron-down');
+                } else {
+                    answer1.style.display = 'block';
+                    chevron1.classList.remove('fa-chevron-down');
+                    chevron1.classList.add('fa-chevron-up');
+                }
+            })
+        })
+        const faqQuestions2 = document.querySelectorAll(".faq6-1");
+        faqQuestions2.forEach((question2) => {
+            question2.addEventListener('click', () => {
+                const answer2 = question2.nextElementSibling;
+                const chevron2 = question2.querySelector('i');
+                question2.classList.toggle('active');
+                if (answer2.style.display === 'block') {
+                    answer2.style.display = 'none';
+                    chevron2.classList.remove('fa-chevron-up');
+                    chevron2.classList.add('fa-chevron-down');
+                } else {
+                    answer2.style.display = 'block';
+                    chevron2.classList.remove('fa-chevron-down');
+                    chevron2.classList.add('fa-chevron-up');
+                }
+            })
+        })
+
+        const faqQuestions3 = document.querySelectorAll(".faq7-1");
+        faqQuestions3.forEach((question3) => {
+            question3.addEventListener('click', () => {
+                const answer3 = question3.nextElementSibling;
+                const chevron3 = question3.querySelector('i');
+                question3.classList.toggle('active');
+                if (answer3.style.display === 'block') {
+                    answer3.style.display = 'none';
+                    chevron3.classList.remove('fa-chevron-up');
+                    chevron3.classList.add('fa-chevron-down');
+                } else {
+                    answer3.style.display = 'block';
+                    chevron3.classList.remove('fa-chevron-down');
+                    chevron3.classList.add('fa-chevron-up');
+                }
+            })
+        })
+
+        const faqQuestions4 = document.querySelectorAll(".faq8-1");
+        faqQuestions4.forEach((question4) => {
+            question4.addEventListener('click', () => {
+                const answer4 = question4.nextElementSibling;
+                const chevron4 = question4.querySelector('i');
+                question4.classList.toggle('active');
+                if (answer4.style.display === 'block') {
+                    answer4.style.display = 'none';
+                    chevron4.classList.remove('fa-chevron-up');
+                    chevron4.classList.add('fa-chevron-down');
+                } else {
+                    answer4.style.display = 'block';
+                    chevron4.classList.remove('fa-chevron-down');
+                    chevron4.classList.add('fa-chevron-up');
+                }
+            })
+        })
+
+        const faqQuestions5 = document.querySelectorAll(".faq9-1");
+        faqQuestions5.forEach((question5) => {
+            question5.addEventListener('click', () => {
+                const answer5 = question5.nextElementSibling;
+                const chevron5 = question5.querySelector('i');
+                question5.classList.toggle('active');
+                if (answer5.style.display === 'block') {
+                    answer5.style.display = 'none';
+                    chevron5.classList.remove('fa-chevron-up');
+                    chevron5.classList.add('fa-chevron-down');
+                } else {
+                    answer5.style.display = 'block';
+                    chevron5.classList.remove('fa-chevron-down');
+                    chevron5.classList.add('fa-chevron-up');
+                }
+            })
+        })
+
+    </script>
+</body>
+
+</html>

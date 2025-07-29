@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: rgb(1,1,15);">
+    <div class="navBarr" style="padding-top: 0px; margin-top: 10px;">
+        <div class="navBar">
+            <div class="barBtn">
+                <div class="nav1">
+                    <p><i>Voxify</i></p>
+                </div>
+                <div class="toggle-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="nav2">
+                <a href="#home"><button>Home</button></a>
+                <a href="#features"><button>Features</button></a>
+                <a href="#work"><button>How it works</button></a>
+                <a href="#faq"><button>FAQ</button></a>
+                <a href="#testmonial"><button>Testmonial</button></a>
+            </div>
+            <div class="nav3">
+                <button><a href="getStarted.html">Get Started</a></button>
+            </div>
+        </div>
+
+    </div>
+    <div class="dropdown-menu">
+        <a href="index.html"><button>Home</button></a>
+        <a href="features.html"><button>Features</button></a>
+        <a href="how.html"><button>How it works</button></a>
+        <a href="faq.html"><button>FAQ</button></a>
+        <a href="testimonial.html"><button>Testimonial</button></a>
+        <a href="voice.html"><button>Get Started</button></a>
+    </div>
+    <div class="body2">
+        <p class="bodyp1">Experience the Power of Seamless Interaction</p>
+        <p class="bodyp2">Discover how our AI Voice Assistant simplifies tasks, enhances productivity, and
+            connects<br />you to your
+            world</p>
+        <div class="bodyp3">
+            <button>Explore Features</button>
+        </div>
+        <div class="bbox">
+            <div>
+                <div class="box1">
+                    <div class="boxx1">
+                        <div class="bodyp11">
+                            <p class="bodyp4">Interactive Demonstration Section</p>
+                            <p class="bodyp5">Explore real-time commands and experience the seamless<br />interaction
+                                with
+                                our
+                                AI
+                                voice Assistant,
+                                designed to understand your<br />requests andd respond instantly to make your tasks
+                                easier
+                                and
+                                your<br />day more productive</p>
+                            <div>
+                                <div class="bodyp12">
+                                    <p class="bodyp6">What's the temperature?</p>
+                                    <p class="bodyp7">Set a timer for 10 minutes</p>
+                                    <button class="bodyp8"><i class="fa-solid fa-microphone"></i></button>
+                                    <p class="bodyp9">What's the weather like today?</p>
+                                    <p class="bodyp10">Play my favorite playlis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="box2">
+                            <p class="box2p1">Natural Conversations</p>
+                            <p class="box2p2">Engage with an intelligent assistant designed to listen attentively,
+                                understand
+                                your
+                                needs<br />with precision, and respond naturally--just like having a conversation with a
+                                human.<br />Whether you're managing tasks, seeking information, or simply exploring
+                                possibilities,<br />Our AL adapts to your style and preferences.</p>
+                            <div class="box2img">
+                                <img src="./images/blue11.jpeg" />
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="boxx2">
+                    <div class="box3">
+                        <p class="box3p1">Advanced Voice Recognition</p>
+                        <p class="box3p2">At the heart of Voxify lies cutting-edge voice recognition technology,
+                            designed to
+                            make<br />your
+                            interactions, seamless, accurate, and natural. with state-of-the-art AI
+                            algorithms.<br />Voxify
+                            understands your words, tone, and intent, ensuring every command is executed<br />precisely
+                            as
+                            you
+                            envisioned.</p>
+                        <div class="box3img">
+                            <img src="./images/blue13.jpeg">
+                        </div>
+                    </div>
+                    <div class="box4">
+                        <p class="box4p1">Hands-Free Convenience</p>
+                        <p class="box4p2">From managingyour calender to playing your favourite playlist,
+                            Volixify<br />allows
+                            you to
+                            controlyour
+                            day without lifting a finger. Simply say the<br />word, and let Volixify do the rest</p>
+                        <div class="box4p5">
+                            <p class="box4p3">.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            const toggleBtn = document.querySelector(".toggle-btn");
+            const toggleBtnIcon = document.querySelector(".toggle-btn i");
+            const dropDownMenu = document.querySelector(".dropdown-menu")
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle("open")
+                const isOpen = dropDownMenu.classList.contains("open")
+
+                toggleBtnIcon.classList = isOpen
+                    ? "fa-solid fa-xmark"
+                    : "fa-solid fa-bars"
+            }
+
+        </script>
+</body>
+
+</html>
