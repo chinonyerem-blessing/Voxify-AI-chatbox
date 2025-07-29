@@ -3434,8 +3434,30 @@ button.active {
         padding-top: 30px;
         height: 900px;
     }
-    .text4{
+
+    .text4 {
         display: none;
+    }
+
+    .ratte {
+        gap: 3px;
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+
+    .text1 {
+        margin-top: 40px;
+
+    }
+
+    .text2 {
+        padding-top: 40px;
+
+    }
+
+    .text3 {
+        padding-top: 40px;
+
     }
 
 }
@@ -3898,7 +3920,8 @@ button.active {
         cursor: pointer;
 
     }
-    .text4{
+
+    .text4 {
         display: none;
     }
 
@@ -3911,12 +3934,30 @@ button.active {
     }
 
     .ratte {
-        gap: 5px;
+        gap: 3px;
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
+
+    .text1 {
+        margin-top: 40px;
+
+    }
+
+    .text2 {
+        padding-top: 40px;
+
+    }
+
+    .text3 {
+        padding-top: 40px;
+
     }
 
     .barchat {
         display: block;
     }
+
     .barchat {
         display: block;
     }
@@ -3975,7 +4016,8 @@ button.active {
     #chatBox1 {
         display: block;
     }
-    .spea{
+
+    .spea {
         padding-top: 190px;
     }
 
@@ -4013,7 +4055,8 @@ button.active {
         padding-top: 30px;
         height: 1000px;
     }
-    .text4{
+
+    .text4 {
         display: none;
     }
 
@@ -4494,9 +4537,11 @@ button.active {
     .barchat {
         display: block;
     }
+
     .barchat {
         display: block;
     }
+
     .barchat {
         display: block;
     }
@@ -4509,7 +4554,7 @@ button.active {
         width: 420px;
     }
 
-    
+
 
     .recentt {
         gap: 240px;
@@ -4545,7 +4590,8 @@ button.active {
     #chatBox1 {
         display: block;
     }
-    .spea{
+
+    .spea {
         padding-top: 190px;
     }
 
@@ -4583,6 +4629,7 @@ button.active {
         padding-top: 30px;
         height: 1000px;
     }
+
     .every {
         width: 205px;
     }
@@ -4594,7 +4641,8 @@ button.active {
     .cloud1 {
         margin-left: 130px;
     }
-    .text4{
+
+    .text4 {
         display: none;
     }
 
@@ -4881,7 +4929,7 @@ button.active {
 
     .text4 {
         overflow: hidden;
-        
+
     }
 
     .test4y {
@@ -4923,10 +4971,12 @@ button.active {
     .footer5 {
         gap: 3px;
     }
-    .boc{
+
+    .boc {
         width: 450px;
     }
-     .chatBox1 {
+
+    .chatBox1 {
         gap: 220px;
     }
 
@@ -4968,7 +5018,7 @@ button.active {
         width: 350px;
     }
 
-    .barchat{
+    .barchat {
         background-color: rgb(1, 1, 15);
         padding-bottom: 550px;
     }
@@ -4976,7 +5026,7 @@ button.active {
     .chatBar {
         padding-bottom: 70px;
         width: 400px;
-        
+
     }
 
 
@@ -5008,7 +5058,7 @@ button.active {
         margin-top: 8px;
     }
 
-   
+
 
 
 }
