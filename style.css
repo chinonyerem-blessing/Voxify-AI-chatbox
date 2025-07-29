@@ -3181,12 +3181,12 @@ button.active {
 
     .premiumBox2 {
         left: 40px;
-        top: 6480px;
+        top: 6080px;
     }
 
     .premiumBox3 {
         left: 40px;
-        top: 7000px;
+        top: 6600px;
     }
 
     .sub7 {
@@ -3433,6 +3433,9 @@ button.active {
         background-size: cover;
         padding-top: 30px;
         height: 900px;
+    }
+    .text4{
+        display: none;
     }
 
 }
@@ -3745,12 +3748,12 @@ button.active {
 
     .premiumBox2 {
         left: 60px;
-        top: 6480px;
+        top: 6080px;
     }
 
     .premiumBox3 {
         left: 60px;
-        top: 7000px;
+        top: 6600px;
     }
 
     .sub7 {
@@ -3895,6 +3898,9 @@ button.active {
         cursor: pointer;
 
     }
+    .text4{
+        display: none;
+    }
 
     .text4 {
         overflow: hidden;
@@ -4006,6 +4012,9 @@ button.active {
         background-size: cover;
         padding-top: 30px;
         height: 1000px;
+    }
+    .text4{
+        display: none;
     }
 
 
@@ -4319,12 +4328,12 @@ button.active {
 
     .premiumBox2 {
         left: 80px;
-        top: 6300px;
+        top: 5970px;
     }
 
     .premiumBox3 {
         left: 80px;
-        top: 6810px;
+        top: 6510px;
     }
 
     .sub7 {
@@ -4584,6 +4593,9 @@ button.active {
 
     .cloud1 {
         margin-left: 130px;
+    }
+    .text4{
+        display: none;
     }
 
 
@@ -4869,6 +4881,7 @@ button.active {
 
     .text4 {
         overflow: hidden;
+        
     }
 
     .test4y {

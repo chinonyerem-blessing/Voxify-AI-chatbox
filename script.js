@@ -96,7 +96,7 @@ let boxx5 = document.getElementById("boxx5");
 
 let leftArrow = document.getElementById("left-arrow");
 let rightArrow = document.getElementById("right-arrow");
-let boxWidth = 900;
+let boxWidth = 1200;
 let currentBox = 1;
 
 leftArrow.addEventListener('click', () => {
@@ -115,7 +115,7 @@ rightArrow.addEventListener('click',
     });
 
 function updateBoxes() {
-    let boxWidth = 330;
+    let boxWidth = 600;
     let screenWidth = window.innerWidth;
     let leftPosition = (screenWidth / 2) - (boxWidth / 2);
 
